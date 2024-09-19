@@ -1,6 +1,10 @@
 function fatorial(n) {
     let resultado = n;
 
+    if(n == 0) {
+        resultado = 1;
+    }
+    
     if(n > 1) {
         resultado *= fatorial(n - 1);
     }
